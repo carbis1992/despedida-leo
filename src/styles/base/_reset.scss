@@ -1,0 +1,39 @@
+@use '../abstracts/variables' as *;
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  min-width: 320px;
+  min-height: 100%;
+  font-size: 16px;
+  color: $ink;
+  background: $paper;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  min-width: 320px;
+  min-height: 100vh;
+  margin: 0;
+  background: radial-gradient(circle at 85% 10%, rgba($secondary, 0.45), transparent 28rem),
+    linear-gradient(135deg, $paper 0%, #ffe9ef 100%);
+}
+
+button,
+input {
+  font: inherit;
+}
+
+button {
+  border: 0;
+  cursor: pointer;
+}
+
+p {
+    margin: 0;
+}

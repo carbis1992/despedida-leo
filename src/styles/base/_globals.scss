@@ -1,0 +1,60 @@
+@use '../abstracts/variables' as *;
+
+:root {
+  --color-primary: #{$primary};
+  --color-secondary: #{$secondary};
+  --color-ink: #{$ink};
+  --color-muted: #{$muted};
+  --color-paper: #{$paper};
+  --color-surface: #{$surface};
+  --font-body: #{$font-body};
+  --font-heading: #{$font-heading};
+  --font-subheading: #{$font-subheading};
+  --font-list: #{$font-list};
+  --font-quote: #{$font-quote};
+}
+
+body {
+  color: $ink;
+  font-family: $font-body;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6,
+.eyebrow {
+  font-family: $font-subheading;
+}
+
+button:focus-visible,
+input:focus-visible {
+  outline: 3px solid $secondary;
+  outline-offset: 3px;
+}
+
+button {
+  padding: 1rem;
+  border-radius: 30px;
+}
+
+input {
+  width: 100%;
+  padding: 1rem;
+  border: 2px solid rgba($primary, 0.25);
+  border-radius: 1rem;
+  background: rgba($surface, 0.8);
+  color: $ink;
+  font-family: $font-body;
+
+  &:focus {
+    border-color: $primary;
+    outline: none;
+    box-shadow: 0 0 0 4px rgba($secondary, 0.45);
+  }
+
+  &::placeholder {
+    color: $muted;
+  }
+}
