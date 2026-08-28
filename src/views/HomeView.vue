@@ -41,7 +41,7 @@ function goToChecklist() {
   &__container {
     margin: auto;
     margin-top: 0;
-
+    padding: 2rem;
     .eyebrow {
       margin: 0 0 1rem;
       color: $primary;
