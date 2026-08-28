@@ -23,6 +23,19 @@ Para validar una compilación de producción:
 npm run build
 ```
 
+## Publicar en GitHub Pages
+
+El proyecto está configurado para publicarse en la rama `gh-pages` del repositorio.
+
+```bash
+npm run deploy
+```
+
+Después, en GitHub, seleccioná `Settings > Pages` y elegí `Deploy from a branch`,
+con la rama `gh-pages` y la carpeta `/ (root)`. La web quedará disponible en:
+
+`https://carbis1992.github.io/despedida-leo/`
+
 ## Publicar en GitHub
 
 1. Crear en GitHub un repositorio vacío llamado `despedida-leo`.

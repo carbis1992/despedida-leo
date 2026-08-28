@@ -1,6 +1,6 @@
 <template>
   <main class="checklist">
-    <button type="button" @click="goToHome" class="checklist__btn"><<</button>
+    <button type="button" @click="goToHome" class="checklist__btn">&lt;&lt;</button>
     <div class="checklist__list">
       <h1 class="checklist__title">Qué debes llevar</h1>
       <div class="checklist__checks">
