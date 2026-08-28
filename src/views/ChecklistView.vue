@@ -63,6 +63,7 @@ function goToHome() {
     background: none;
     border: none;
     font-size: 1.5rem;
+    color: $primary;
   }
   &__title {
     color: $primary;
@@ -73,7 +74,8 @@ function goToHome() {
     line-height: 0.92;
   }
   &__list {
-    max-width: 70%;
+    max-width: 21rem;
+    margin: auto;
     justify-self: center;
     height: 65%;
     background: pink;
