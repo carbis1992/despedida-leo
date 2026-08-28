@@ -39,7 +39,7 @@ function goToChecklist() {
   min-width: 100%;
 
   &__container {
-    margin: 1rem;
+    margin: auto;
     margin-top: 0;
 
     .eyebrow {
