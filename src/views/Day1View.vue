@@ -91,6 +91,9 @@ onMounted(() => {
   background-size: cover;
 
   &__title-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     place-items: center;
   }
   &__btn {
