@@ -3,10 +3,12 @@
     <button type="button" @click="goBack" class="itinerary__btn">&lt;&lt;</button>
 
     <div class="itinerary__container">
-      <h1 class="itinerary__title">DAY 1</h1>
-      <p class="itinerary__subtitle">
-        {{ typedText }}<span class="itinerary__cursor" v-if="isTyping"></span>
-      </p>
+      <div class="itinerary__title-section">
+        <h1 class="itinerary__title">DAY 1</h1>
+        <p class="itinerary__subtitle">
+          {{ typedText }}<span class="itinerary__cursor" v-if="isTyping"></span>
+        </p>
+      </div>
       <div class="itinerary__details" :class="{ 'itinerary__details--visible': showDetails }">
         <p class="itinerary__text">Hay un paquete para vos... <br />pero, donde?</p>
         <p class="itinerary__p">
@@ -14,9 +16,8 @@
           vapor, tu paquete te espera con amor."
         </p>
         <input type="text" name="adivinanza" v-model="answer" placeholder="¿Donde estoy?" />
-
-        <p class="itinerary__rigth" v-show="correctAnswer">CORRECTO !</p>
       </div>
+      <p class="itinerary__rigth" v-show="correctAnswer">CORRECTO !</p>
     </div>
   </section>
 </template>
@@ -89,6 +90,9 @@ onMounted(() => {
   background-image: url('/src/assets/fondo8.jpg');
   background-size: cover;
 
+  &__title-section {
+    place-items: center;
+  }
   &__btn {
     background: none;
     border: none;
@@ -157,12 +161,10 @@ onMounted(() => {
     }
   }
   &__rigth {
-    position: absolute;
-    bottom: 0;
     align-self: center;
     color: $primary;
     font-family: $font-list;
-    font-weight: 600;
+    font-size: 1.3rem;
   }
 }
 
