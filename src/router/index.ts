@@ -1,6 +1,8 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import ChecklistView from '../views/ChecklistView.vue'
 import HomeView from '../views/HomeView.vue'
+import Day1View from '../views/Day1View.vue'
+import WelcomeView from '../views/WelcomeView.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -18,6 +20,16 @@ const router = createRouter({
     {
       path: '/:pathMatch(.*)*',
       redirect: { name: 'home' },
+    },
+    {
+      path: '/day-one',
+      name: 'day-one',
+      component: Day1View,
+    },
+    {
+      path: '/welcome',
+      name: 'welcome',
+      component: WelcomeView,
     },
   ],
 })

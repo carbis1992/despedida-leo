@@ -71,8 +71,6 @@ function goToChecklist() {
     }
 
     button {
-      background: $secondary;
-      color: $primary;
       margin-left: 25%;
     }
   }

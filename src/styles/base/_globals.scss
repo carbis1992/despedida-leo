@@ -37,6 +37,8 @@ input:focus-visible {
 button {
   padding: 1rem;
   border-radius: 30px;
+  background: $secondary;
+  color: $primary;
 }
 
 input {
