@@ -102,6 +102,9 @@ onMounted(() => {
   }
 
   &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-items: center;
     background: pink;
     margin: auto;
