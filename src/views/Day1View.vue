@@ -151,7 +151,6 @@ onMounted(() => {
     transition:
       opacity 0.9s ease,
       transform 0.9s ease;
-    margin: auto;
     width: 75%;
     display: flex;
     flex-direction: column;
