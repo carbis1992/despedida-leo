@@ -11,13 +11,14 @@
       </div>
       <div class="itinerary__details" :class="{ 'itinerary__details--visible': showDetails }">
         <p class="itinerary__text">Hay un paquete para vos... <br />pero, donde?</p>
+        <p class="itinerary__text">Una adivinanza para vos que te encantan</p>
         <p class="itinerary__p">
           "Donde cae la lluvia cuando quieres cantar, y los jabones te hacen bailar. Entre espuma y
-          vapor, tu paquete te espera con amor."
+          vapor, donde estoy?"
         </p>
-        <input type="text" name="adivinanza" v-model="answer" placeholder="¿Donde estoy?" />
+        <input type="text" name="adivinanza" v-model="answer" placeholder="Pone la respuesta..." />
       </div>
-      <p class="itinerary__rigth" v-show="correctAnswer">CORRECTO !</p>
+      <p class="itinerary__rigth" v-show="correctAnswer">Yesss, GO FOR IT !</p>
     </div>
   </section>
 </template>

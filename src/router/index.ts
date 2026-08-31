@@ -3,6 +3,7 @@ import ChecklistView from '../views/ChecklistView.vue'
 import HomeView from '../views/HomeView.vue'
 import Day1View from '../views/Day1View.vue'
 import WelcomeView from '../views/WelcomeView.vue'
+import Day2View from '../views/Day2View.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -30,6 +31,11 @@ const router = createRouter({
       path: '/welcome',
       name: 'welcome',
       component: WelcomeView,
+    },
+    {
+      path: '/day-two',
+      name: 'day2',
+      component: Day2View,
     },
   ],
 })
